@@ -3,7 +3,7 @@ echo OFF
 echo --- Subir arquivo para o GitHUB ----
 echo
 git add .
-git commit -m "Site melhoradinho com tabelas"
+git commit -m "Atualizacao site e novo site"
 git push 
 echo
 echo --- Fim ---
