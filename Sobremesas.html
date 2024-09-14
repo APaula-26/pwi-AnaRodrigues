@@ -3,84 +3,13 @@
 
 <head>
 
-    <title>CSS Template</title>
+    <title>Sobremesas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantinho do aconchego</title>
     <link rel="icon" type="images/x-icon" href="/images/icons8-sobremesa-48.png">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        header {
-            background-color: tomato;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        nav {
-            float: left;
-            width: 30%;
-            height: 300px;
-            /* only for demonstration, should be removed */
-            background: #f1b69b;
-            padding: 20px;
-
-        }
-
-        /* Style the list inside the menu */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        article {
-            float: left;
-            padding: 20px;
-            width: 70%;
-            background-color: #f0f7ee;
-            height: 300px;
-            font-size: 20px;
-            /* only for demonstration, should be removed */
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: tomato;
-            padding: 10px;
-            text-align: center;
-            color: white;
-            font-size: 25px;
-        }
-
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-
-            nav,
-            article {
-                width: 100%;
-                height: auto;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="./css/ESobremesa.css">
 </head>
 
 <body>
@@ -92,12 +21,15 @@
 
     <section>
         <nav>
-            <ul>
-                <br>
-                <br>
-                <li style="margin: 10px;"><a href="#">Açaí com Cupuaçu</a></li>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="./images/açai_com_cupuaçu.jpg" alt="açai_com_cupuaçu" style="border-radius: 10%" ; width:
+                    200px;>
+                <ul>
+                    <br>
+                    <li style="margin: 10px;"><a href="#">Açaí com Cupuaçu</a></li>
 
-            </ul>
+                </ul>
+            </div>
         </nav>
 
         <article>
@@ -114,11 +46,13 @@
 
     <section>
         <nav style="background-color: #f0f7ee;">
-            <ul>
-                <br>
-                <br>
-                <li style="margin: 10px;"><a href="#">Cheesecake de Goiaba</a></li>
-            </ul>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="./images/Cheesecake_de_goiaba.jpg" alt="Cheesecake_de_goiaba" style="border-radius: 10%" ;
+                    width: 200px;>
+                <ul>
+                    <li style="margin: 10px;"><a href="#">Cheesecake de Goiaba</a></li>
+                </ul>
+            </div>
         </nav>
 
 
@@ -138,11 +72,13 @@
 
     <section>
         <nav>
-            <ul>
-                <br>
-                <br>
-                <li style="margin: 10px;"><a href="#">Cocada Cremosa com Sorbet de Cupuaçu</a></li>
-            </ul>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="./images/cocada_cremosa_com_sorbet_.jpg" alt="cocada_cremosa_com_sorbet_"
+                    style="border-radius: 10%; width: 200px;">
+                <ul>
+                    <li style="margin: 10px;"><a href="#">Cocada Cremosa com Sorbet de Cupuaçu</a></li>
+                </ul>
+            </div>
         </nav>
 
         <article>
