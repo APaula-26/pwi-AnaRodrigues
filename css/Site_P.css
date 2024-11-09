@@ -34,13 +34,15 @@ body {
     align-items: center;
     flex-direction: column;
     font-size: 40px;
+    width: 100%;
     color: rgb(150, 48, 7);
 }
 
 .intro {
+    height: 300px;
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 20px;
     width: 50%;
     align-items: center;
     margin: auto;
@@ -51,17 +53,11 @@ body {
     margin: 0;
 }
 
-.table {
-    width: 100%;
-}
 
-.table_np {
-    width: 15%;
-}
-
-.comida img {
-    border-radius: 20%;
-    margin: 50%
+.feijoada_veg {
+    border-radius: 10%;
+    width: 200px;
+    margin: 40px;
 }
 
 .ul li {
@@ -75,9 +71,23 @@ body {
     flex-direction: column;
     justify-content: center;
     font-size: 18px;
-    width: 50%;
+    width: 1500px;
     align-items: center;
     margin: auto;
     background-color: rgb(150, 48, 7);
+    color: aliceblue;
+}
+
+.endereco {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    width: 1500px;
+    align-items: center;
+    margin: 3px;
+    background-color: rgb(161, 80, 4);
     color: aliceblue;
 }
