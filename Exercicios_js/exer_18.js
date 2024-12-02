@@ -1,11 +1,20 @@
-// 18 - Francisco tem 1,50m e cresce 2 centímetros por ano, enquanto Sara tem 1,10m e cresce 3 centímetros por ano. Faça um algoritmo 
-// que calcule e imprima na tela em quantos anos serão necessários para que Francisco seja maior que Sara.
+//18 - Francisco tem 1,50m e cresce 2 centímetros por ano, enquanto Sara tem 1,10m e cresce 3 centímetros por ano. 
+//Faça um algoritmo que calcule e imprima na 
+//tela em quantos anos serão necessários para que Francisco seja maior que Sara.
 
-let fran = 1.50;
 let sara = 1.10;
-let sc = sara * 2; //sara cresce
+let fran = 1.50;
+let cresceSara = 0.03;
+let cresceFran = 0.02;
+let ano = 0;
+let anoMax = 100;
 
+for(ano; ano < anoMax; ano++){
+    sara += cresceSara;
+    fran += cresceFran;
+    if(sara >= fran){
+        break;
+    }
+};
 
-for (let i =0; i < sara; i++);
-    console.log("");
-
+console.log("Sara levevará",ano, "anos para ter a mesma altura que Francisco");
